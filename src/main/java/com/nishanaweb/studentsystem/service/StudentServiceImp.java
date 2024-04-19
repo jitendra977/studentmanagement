@@ -43,6 +43,7 @@ public class StudentServiceImp implements StudentService{
         if(existingStudent != null){
             existingStudent.setName(updatedStudent.getName());
             existingStudent.setAddress(updatedStudent.getAddress());
+            existingStudent.setEmail(updatedStudent.getEmail());
             studentRepository.save(existingStudent);
         }
 

@@ -37,6 +37,7 @@ public class StudentController {
         if (existingStudent != null) {
             existingStudent.setName(updateStudent.getName());
             existingStudent.setAddress(updateStudent.getAddress());
+            existingStudent.setEmail(updateStudent.getEmail());
             // Update other fields as needed
             studentService.saveStudent(existingStudent);
             return "Student with ID " + id + " is updated";
